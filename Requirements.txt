@@ -1,0 +1,25 @@
+# AI Meeting Assistant - Python dependencies
+
+# UI
+streamlit>=1.40.0
+
+# Audio / YouTube
+yt-dlp>=2025.1.0
+openai-whisper>=20240930
+
+# Deep learning backend used by Whisper and HuggingFace models
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# LangChain / LCEL
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-mistralai>=0.2.0
+
+# RAG / Vector database
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+
+# PDF export
+reportlab>=4.0.0
