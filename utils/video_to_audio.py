@@ -48,3 +48,20 @@ def chunk_audio(wav_path : str , chunk_minutes : int = 10) -> list:
         chunks.append(chunk_path)   
     
     return chunks
+
+
+def process_input(source: str) -> list:
+    if(source.startswith("https://") or source.startswith("http://")):
+        print("youtube url detected processing. . .")
+        wav_path = download_youtube_audio(source)
+    else:
+        print("detected local path processing audio")
+        wav_path = convert_to_wav(source)
+    
+    print("chunking audio")
+    chunks = chunk_audio(wav_path)
+    print(f" total creation of chunks = {len(chunks)}")
+    
+    print("creation successful") 
+    return chunks
+           
