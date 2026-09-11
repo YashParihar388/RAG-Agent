@@ -1,7 +1,7 @@
 import whisper
 import os
 from pydub import AudioSegment
-
+import requests
 
 SARVAM_PIECE_SECONDS = 25
 
